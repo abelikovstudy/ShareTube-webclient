@@ -1,10 +1,15 @@
+import { useNavigate } from "react-router-dom";
 
 export function NavigationBar(){
+    const navigate = useNavigate()
+    
     const inputEnter = (e) =>{
         if(e.key === 'Enter'){
             alert('1')
         }
     }
+
+
 
     return(
         <>
@@ -14,7 +19,7 @@ export function NavigationBar(){
                             <img src="/svg/upload.svg" alt="Upload" />
                         </li>
                         <li id="navigation-bar-right">
-                            <img src="/svg/user.svg" alt="Login"/>
+                            <img src="/svg/user.svg" alt="Login" onClick={() => navigate("/auth")}/>
                         </li>
                     </ul>
                     <div class="search-bar">

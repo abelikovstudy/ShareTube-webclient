@@ -3,6 +3,10 @@
   src: url(fonts/regular.woff);
 }
 
+@font-face {
+  font-family: boldMainFont;
+  src: url(fonts/bold.woff);
+}
 
 .navigation-bar{
   text-align: center;
@@ -61,6 +65,67 @@
 
 .search-bar input:focus{
   outline-width: 0;
+}
+
+.auth-panel{
+  text-align: center;
+  position: absolute;               
+  top: 35%;                         
+  transform: translate(0, -75%);
+  width: 100%;
+}
+
+.auth-panel h1{
+  font-family: boldMainFont;
+  font-size: xx-large;
+}
+
+.auth-panel input{
+  border: none;
+  width: 60%;
+  font-family: mainFont;
+  font-size: medium;
+}
+
+.auth-panel .error {
+  outline-color: red;
+}
+
+.auth-panel input:focus{
+  outline-width: 0;
+}
+
+.auth-panel input[type=submit]{
+  margin: auto;
+  width: 30%;
+}
+
+.auth-panel input[type=submit]:hover{
+  color: white;
+  background-color: black;
+}
+
+
+.auth-panel hr{
+  margin: auto;
+  width: 60%;
+}
+
+.auth-panel a{
+  font-family: mainFont;
+  font-size: medium;
+}
+
+.auth-panel a:link{
+  text-decoration:dotted;
+}
+
+.auth-panel a:visited{
+  color: gray;
+}
+
+.auth-panel a:hover{
+  text-decoration: underline;
 }
 
 ::placeholder{
